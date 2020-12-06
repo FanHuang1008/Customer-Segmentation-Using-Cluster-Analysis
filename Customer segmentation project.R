@@ -69,7 +69,7 @@ ggplot(data, aes(x = Annual_Income, y = Spending_Score)) +
 
 
 
-# �ھ�Age�Ϥ�Cluster4�PCluster6
+# ®Ú¾ÚAge°Ï¤ÀCluster4»PCluster6
 data$cluster = km$cluster
 boxplot(data[data$cluster == 1, 'Age'], data[data$cluster == 4, 'Age'],
         main = "Age Distribution of Cluster 1 and Cluster 4",
@@ -78,8 +78,4 @@ boxplot(data[data$cluster == 1, 'Age'], data[data$cluster == 4, 'Age'],
         col = c("#E31351", "#002F65"))
 
 
-# hierarchial clustering
-hclust <- hclust(dist(data[,2:5]), method = "average")
-plot(hclust)
-abline(h=40, col="blue", lty=2, lwd=2)
 
