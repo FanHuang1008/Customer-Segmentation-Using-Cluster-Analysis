@@ -69,7 +69,7 @@ ggplot(data, aes(x = Annual_Income, y = Spending_Score)) +
 
 
 
-# ®Ú¾ÚAge°Ï¤ÀCluster4»PCluster6
+# bocplot for Cluster4 and Cluster6's age
 data$cluster = km$cluster
 boxplot(data[data$cluster == 1, 'Age'], data[data$cluster == 4, 'Age'],
         main = "Age Distribution of Cluster 1 and Cluster 4",
